@@ -45,6 +45,7 @@ Add the Code to your Project.
           </ul>
         </section>
   2. add this code to your component.ts 
+  
      sendEmailWithCode(email, code) {
         let to = "Client <" + email + ">";
         let text = "Your access code is " + code;
