@@ -1,0 +1,24 @@
+<div fxLayout="row" fxLayoutAlign="center center" style="height: 100%;">
+  <div class="register mat-elevation-z12">
+    <div class="register-header" fxLayout="column" fxLayoutAlign="center center">
+      <img class="logo" src="assets/img/logo2x.png">
+    </div>
+    <form #form="ngForm" (ngSubmit)="signUp()">
+      <div class="register-content" fxLayout="column" fxLayoutAlign="start stretch">
+        <button type="button" color="primary" class="mb-10" mat-raised-button (click)="signUpWithSocial('google')">SIGN UP WITH GOOGLE</button>
+        <button type="button" color="primary" class="mb-10" mat-raised-button (click)="signUpWithSocial('facebook')">SIGN UP ACCOUNT WITH FACEBOOK</button>
+
+        <div class="line-seperator">
+          <hr/><p>or</p><hr/>
+        </div>
+
+        <mat-form-field>
+          <input matInput placeholder="E-Mail" name="email" required [(ngModel)]="email">
+        </mat-form-field>
+        <span class="error-message" *ngIf="error.hasError">{{error.message}}</span>
+        <button color="primary" class="mb-10" mat-raised-button [disabled]="!form.valid">SIGN UP WITH EMAIL</button>
+        <p class="note">Already have an account?<br/> <a [routerLink]="['/login']">Sign in here</a></p>
+      </div>
+    </form>
+  </div>
+</div>
