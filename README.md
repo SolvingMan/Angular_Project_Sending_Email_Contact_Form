@@ -27,8 +27,8 @@ Add the Code to your Project.
 ---------------------------------------------------------------------------------------------------------------------------------------
 1.add the code to your componet.html
       <section>
-        <h2>Get in touch</h2>
-        <!-- <form action="#" > -->
+          <h2>Get in touch</h2>
+  
           <div class="fields">
             <div class="field half">
               <input type="text" name="name" id="name" required [(ngModel)]="name" placeholder="Name" />
