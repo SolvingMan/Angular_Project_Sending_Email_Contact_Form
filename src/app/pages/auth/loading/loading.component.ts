@@ -120,7 +120,7 @@ export class LoadingComponent implements OnInit {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        "api_key": "api-CD1539F0A90F11E89DF2F23C91C88F4E",
+        "api_key": "Your api",
         "to": [to],
         "sender": "HomeKit <info@Homekit.com>",
         "subject": name, 
